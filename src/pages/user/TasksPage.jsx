@@ -31,6 +31,12 @@ export function TasksPage() {
       const result = await completeTask(id)
       const parts = [`+${result.xpGained} XP`, `+${result.coinsGained} monedas`]
       if (result.levelUp) parts.push(`¡Nivel ${result.newLevel}!`)
+      if (result.missionsCompleted?.length) {
+        parts.push(`Misión: ${result.missionsCompleted.join(', ')}`)
+      }
+      if (result.achievementsUnlocked?.length) {
+        parts.push(`Logro: ${result.achievementsUnlocked.map((a) => a.title).join(', ')}`)
+      }
       setRewardMsg(parts.join(' · '))
     } finally {
       setActionLoading(false)

@@ -22,6 +22,11 @@ export function Navbar() {
               <Link to="/tareas" className="text-slate-300 hover:text-white">Tareas</Link>
               <Link to="/habitos" className="text-slate-300 hover:text-white">Hábitos</Link>
               <Link to="/proyectos" className="text-slate-300 hover:text-white">Proyectos</Link>
+              <Link to="/misiones" className="text-slate-300 hover:text-white">Misiones</Link>
+              <Link to="/logros" className="text-slate-300 hover:text-white">Logros</Link>
+              <Link to="/tienda" className="text-slate-300 hover:text-white">Tienda</Link>
+              <Link to="/inventario" className="text-slate-300 hover:text-white">Inventario</Link>
+              <Link to="/progreso" className="text-slate-300 hover:text-white">Progreso</Link>
               <Link to="/perfil" className="text-slate-300 hover:text-white">
                 {user?.name || 'Perfil'}
               </Link>

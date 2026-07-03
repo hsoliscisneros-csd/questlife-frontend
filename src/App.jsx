@@ -6,6 +6,11 @@ import { ProfilePage } from './pages/user/ProfilePage.jsx'
 import { TasksPage } from './pages/user/TasksPage.jsx'
 import { HabitsPage } from './pages/user/HabitsPage.jsx'
 import { ProjectsPage } from './pages/user/ProjectsPage.jsx'
+import { MissionsPage } from './pages/user/MissionsPage.jsx'
+import { AchievementsPage } from './pages/user/AchievementsPage.jsx'
+import { ShopPage } from './pages/user/ShopPage.jsx'
+import { InventoryPage } from './pages/user/InventoryPage.jsx'
+import { ProgressPage } from './pages/user/ProgressPage.jsx'
 import { ProtectedRoute } from './components/layout/ProtectedRoute.jsx'
 
 export default function App() {
@@ -43,6 +48,46 @@ export default function App() {
         element={
           <ProtectedRoute>
             <ProjectsPage />
+          </ProtectedRoute>
+        }
+      />
+      <Route
+        path="/misiones"
+        element={
+          <ProtectedRoute>
+            <MissionsPage />
+          </ProtectedRoute>
+        }
+      />
+      <Route
+        path="/logros"
+        element={
+          <ProtectedRoute>
+            <AchievementsPage />
+          </ProtectedRoute>
+        }
+      />
+      <Route
+        path="/tienda"
+        element={
+          <ProtectedRoute>
+            <ShopPage />
+          </ProtectedRoute>
+        }
+      />
+      <Route
+        path="/inventario"
+        element={
+          <ProtectedRoute>
+            <InventoryPage />
+          </ProtectedRoute>
+        }
+      />
+      <Route
+        path="/progreso"
+        element={
+          <ProtectedRoute>
+            <ProgressPage />
           </ProtectedRoute>
         }
       />
